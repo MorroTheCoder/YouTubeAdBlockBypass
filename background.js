@@ -1,5 +1,7 @@
 const user_agent = "Mozilla/5.0 (Windows Phone 10.0; Android 6.0.1; Xbox; Xbox One) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Mobile Safari/537.36 Mobile Edge/42.0.0.2028";
 
+var browser = browser || chrome
+
 browser.webRequest.onBeforeSendHeaders.addListener(
     function (details) {
 
